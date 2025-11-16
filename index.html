@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Breastfeeding Smart – Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg-gradient-start: #ffe7f4;
+      --bg-gradient-end: #ffd9f0;
+      --card-bg: #fff7fc;
+      --accent: #ff6fae;
+      --accent-dark: #e45194;
+      --text-main: #22252f;
+      --text-soft: #6b6b80;
+      --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.08);
+      --radius-xl: 32px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: linear-gradient(145deg, var(--bg-gradient-start), var(--bg-gradient-end));
+    }
+
+    .wrapper {
+      max-width: 480px;
+      width: 100%;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-xl);
+      padding: 28px 24px 24px;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pill {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      top: -40px;
+      right: -40px;
+      filter: blur(1px);
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.8);
+      font-size: 12px;
+      color: var(--text-soft);
+      margin-bottom: 18px;
+    }
+
+    .app-dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 20%, #ffe2f5, #ff6fae);
+    }
+
+    h1 {
+      font-size: 26px;
+      line-height: 1.15;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: var(--text-soft);
+      margin-bottom: 20px;
+    }
+
+    .support-box {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 16px 16px 18px;
+      margin-bottom: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+    }
+
+    .support-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .support-text {
+      font-size: 13px;
+      color: var(--text-soft);
+      margin-bottom: 10px;
+    }
+
+    .support-email {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--accent-dark);
+      font-weight: 500;
+    }
+
+    .support-email span.icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #ffe4f4;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+
+    .buttons-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .btn {
+      flex: 1;
+      min-width: 140px;
+      border: none;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 11px 16px;
+      cursor: pointer;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), #ff9ac6);
+      color: #ffffff;
+      box-shadow: 0 10px 20px rgba(255, 111, 174, 0.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 26px rgba(255, 111, 174, 0.45);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--accent-dark);
+      border: 1px solid rgba(255, 174, 210, 0.6);
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-1px);
+      background: #ffffff;
+    }
+
+    footer {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 11px;
+      color: var(--text-soft);
+      opacity: 0.9;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 22px 18px 20px;
+        border-radius: 24px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <div class="pill"></div>
+
+      <div class="app-badge">
+        <div class="app-dot"></div>
+        <span>Breastfeeding Smart Support</span>
+      </div>
+
+      <h1>How can we help you?</h1>
+      <p class="subtitle">
+        Welcome to the official support page for <strong>Breastfeeding Smart</strong>.
+        If you have any questions about the app, subscriptions, or your account, you’re in the right place.
+      </p>
+
+      <div class="support-box">
+        <div class="support-title">Contact Support</div>
+        <p class="support-text">
+          For any issues or feedback, please send us an email. We’ll get back to you as soon as possible.
+        </p>
+        <div class="support-email">
+          <span class="icon">✉️</span>
+          <span>support@breastfeedingsmart.app</span>
+        </div>
+      </div>
+
+      <div class="buttons-row">
+        <button class="btn btn-secondary" onclick="window.location.href='terms.html'">
+          Terms of Use
+        </button>
+        <button class="btn btn-secondary" onclick="window.location.href='privacy.html'">
+          Privacy Policy
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Breastfeeding Smart. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    // Yıl otomatik gelsin
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
